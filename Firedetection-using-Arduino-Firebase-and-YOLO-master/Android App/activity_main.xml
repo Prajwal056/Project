@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9709ED"
+    android:backgroundTint="#000A0A0A"
+    android:backgroundTintMode="screen"
+    android:focusableInTouchMode="true"
+    android:focusedByDefault="true"
+    android:forceHasOverlappingRendering="true"
+    android:foreground="@mipmap/forest_foreground"
+    android:foregroundGravity="top|right"
+    android:hapticFeedbackEnabled="false"
+    android:theme="@style/AppTheme"
+    android:touchscreenBlocksFocus="false"
+    android:verticalScrollbarPosition="right"
+    android:visibility="visible"
+   
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="367dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:singleLine="false"
+        android:soundEffectsEnabled="true"
+        android:text="Smuggling        Prevention      System for Trees in Forest using IOT"
+        android:textAlignment="inherit"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#F7680B"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Smuggling        Prevention System for Trees in Forest using IOT"
+        android:layout_marginLeft="12dp" />
+
+    <Button
+        android:id="@+id/off"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="#EF0A0A"
+        android:text="OFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/on"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/on"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="45dp"
+        android:background="#0AEF21"
+        android:text="ON"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginLeft="2dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="183dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:text="Led_control"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#070707"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="235dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="56dp"
+        android:text="Firesensor Data"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/fd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="44dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="229dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:text="Vibration Data"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:text="Vibration Data"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/fd"
+        android:layout_width="138dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginStart="14dp"
+        android:text="Loading..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/vd"
+        android:layout_width="138dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:text="Loading..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/fd"
+        android:layout_marginLeft="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
